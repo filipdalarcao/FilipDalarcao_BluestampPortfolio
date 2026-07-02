@@ -55,7 +55,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](<img width="1860" height="2480" alt="IMG_9812" src="https://github.com/user-attachments/assets/ee356055-b1c5-47ee-a748-e7bb5eb1ed24" />) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
-<img width="1860" height="2480" alt="IMG_9812" src="https://github.com/user-attachments/assets/bc70ce42-8906-4666-b33e-db8a0209dea1" />
+file:///Users/filipdalarcao/Downloads/IMG_9812.jpeg
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
