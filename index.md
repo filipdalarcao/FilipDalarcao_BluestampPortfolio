@@ -79,7 +79,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Arduino Uno R4 | Microcontroller | $20 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://store-usa.arduino.cc/products/uno-r4-minima?utm_source=google&utm_medium=cpc&utm_campaign=US-Pmax&gad_source=1&gad_campaignid=21317508903&gbraid=0AAAAACbEa84LjuH_cftCs0DmPSGX5A5SG&gclid=Cj0KCQjwsMLSBhD9ARIsAIpUTDqNtES5n244Piwg1f1os3A16a_qki9tBri9Lo2-iV6T60vdfyj5_yIaAutdEALw_wcB)v"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino Nano | Microcontroller | $12.90 | <a href="https://store-usa.arduino.cc/products/nano-every?utm_source=google&utm_medium=cpc&utm_campaign=US-Pmax&gad_source=1&gad_campaignid=21317508903&gbraid=0AAAAACbEa84LjuH_cftCs0DmPSGX5A5SG&gclid=Cj0KCQjwsMLSBhD9ARIsAIpUTDoosd3C7ZbA9ry_E5j52MjATXQ0cOmW9xiTEpaumf-Hs0kfslNecdYaAlGXEALw_wcB"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
