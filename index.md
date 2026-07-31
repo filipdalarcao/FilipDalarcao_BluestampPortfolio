@@ -444,8 +444,8 @@ void loop() {
 
 # References
 
-- [Example 1](https://www.circuitbread.com/ee-faq/how-does-an-h-bridge-work)
-- [Example 2](https://www.instructables.com/Wireless-Serial-Communication-Using-Bluefruit/)
-- [Example 3](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/)
+- [H Bridge](https://www.circuitbread.com/ee-faq/how-does-an-h-bridge-work)
+- [Bluefruit](https://www.instructables.com/Wireless-Serial-Communication-Using-Bluefruit/)
+- [Arduino](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/)
 
 
