@@ -43,8 +43,8 @@ My project is a gesture controlled robot and my first milestone is building the 
 
 # Schematics 
 
-![Alt Text](image0.jpeg)
-![Alt Text](IMG_9812.jpeg)
+<img width="344" height="561" alt="Screen Shot 2026-07-31 at 9 24 41 AM" src="https://github.com/user-attachments/assets/214a6e06-de9e-4c64-9d4d-4ec219b82f98" />
+
 
 
 # Code
