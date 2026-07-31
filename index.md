@@ -304,6 +304,134 @@ void loop() {
 }
 
 ```
+<!-- Interactive Smartphone Tilt Controller Simulator -->
+<div style="background-color: #1e1e1e; color: #ffffff; padding: 20px; border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; max-width: 500px; margin: 20px auto; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <h3 style="margin-top: 0; color: #4fc3f7;">Interactive Accelerometer Controller</h3>
+  <p style="font-size: 0.9em; color: #cccccc; margin-bottom: 15px;">
+    Open this portfolio on your phone, tap <b>Enable Motion Controls</b>, and tilt your smartphone to steer the simulated robot!
+  </p>
+
+  <canvas id="bseTiltCanvas" width="360" height="360" style="background: #121212; border: 2px solid #333333; border-radius: 8px; max-width: 100%; display: block; margin: 0 auto;"></canvas>
+
+  <div style="margin-top: 15px;">
+    <button id="bseMotionBtn" style="background: #00e676; color: #000000; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.2s;">
+      Enable Motion Controls
+    </button>
+  </div>
+
+  <div style="display: flex; justify-content: space-around; margin-top: 15px; font-family: monospace; font-size: 0.85em; background: #2a2a2a; padding: 8px; border-radius: 6px;">
+    <span>Pitch (Forward/Back): <b id="bsePitchVal" style="color: #4fc3f7;">0°</b></span>
+    <span>Roll (Left/Right): <b id="bseRollVal" style="color: #ff4081;">0°</b></span>
+  </div>
+</div>
+
+<script>
+(function() {
+  const canvas = document.getElementById('bseTiltCanvas');
+  const ctx = canvas.getContext('2d');
+  const btn = document.getElementById('bseMotionBtn');
+  const pitchText = document.getElementById('bsePitchVal');
+  const rollText = document.getElementById('bseRollVal');
+
+  let robot = { x: canvas.width / 2, y: canvas.height / 2, angle: 0, speed: 0 };
+  let pitch = 0, roll = 0;
+
+  // Request motion permission (Required on iOS 13+)
+  btn.addEventListener('click', async () => {
+    if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+      try {
+        const response = await DeviceOrientationEvent.requestPermission();
+        if (response === 'granted') {
+          window.addEventListener('deviceorientation', handleOrientation);
+          btn.innerText = "Motion Connected ✓";
+          btn.style.background = "#333333";
+          btn.style.color = "#00e676";
+        } else {
+          alert('Permission to access orientation was denied.');
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    } else {
+      window.addEventListener('deviceorientation', handleOrientation);
+      btn.innerText = "Motion Connected ✓";
+      btn.style.background = "#333333";
+      btn.style.color = "#00e676";
+    }
+  });
+
+  function handleOrientation(event) {
+    // Beta: Pitch (tilt forward/backward)
+    // Gamma: Roll (tilt left/right)
+    pitch = event.beta ? Math.max(-45, Math.min(45, event.beta)) : 0;
+    roll = event.gamma ? Math.max(-45, Math.min(45, event.gamma)) : 0;
+
+    pitchText.innerText = Math.round(pitch) + '°';
+    rollText.innerText = Math.round(roll) + '°';
+  }
+
+  function update() {
+    const deadzone = 3;
+    let effPitch = Math.abs(pitch) > deadzone ? pitch : 0;
+    let effRoll = Math.abs(roll) > deadzone ? roll : 0;
+
+    robot.speed = (effPitch / 45) * 3;
+    robot.angle += (effRoll / 45) * 0.05;
+
+    robot.x += Math.sin(robot.angle) * robot.speed;
+    robot.y -= Math.cos(robot.angle) * robot.speed;
+
+    // Keep inside bounds
+    robot.x = Math.max(15, Math.min(canvas.width - 15, robot.x));
+    robot.y = Math.max(15, Math.min(canvas.height - 15, robot.y));
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw Grid Pattern
+    ctx.strokeStyle = '#222222';
+    ctx.lineWidth = 1;
+    for (let x = 0; x < canvas.width; x += 30) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+    }
+    for (let y = 0; y < canvas.height; y += 30) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+    }
+
+    // Draw Robot Body
+    ctx.save();
+    ctx.translate(robot.x, robot.y);
+    ctx.rotate(robot.angle);
+
+    ctx.fillStyle = '#4fc3f7';
+    ctx.fillRect(-15, -20, 30, 40);
+
+    // Wheels
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(-18, -15, 3, 10);
+    ctx.fillRect(15, -15, 3, 10);
+    ctx.fillRect(-18, 5, 3, 10);
+    ctx.fillRect(15, 5, 3, 10);
+
+    // Front Direction Pointer
+    ctx.fillStyle = '#ff4081';
+    ctx.beginPath();
+    ctx.arc(0, -20, 5, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function loop() {
+    update();
+    draw();
+    requestAnimationFrame(loop);
+  }
+
+  loop();
+})();
+</script>
 
 # Bill of Materials
 
@@ -313,5 +441,11 @@ void loop() {
 | L298N Motor Drive Controller | Motor Driver | $6.99 | <a href="https://www.amazon.com/dp/B014KMHSW6?lv=shuf&channelId=500&plpRedirect=mhFallback"> Link </a> |
 | Yellow TT Motor | Motor | $4 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.amazon.com/dp/B07L881GXZ?lv=shuf&channelId=500&plpRedirect=mhFallback)"> Link </a> |
 | 4WD Omni-wheel Robot Car Metal Chassis | Body of Robot | $39.99 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://tscinbuny.com/products/tscinbuny-4wd-omni-wheel-robot-car-metal-chassis-for-arduino-robotic-project?srsltid=AfmBOop6Gvt8zAMGuKzlqsgk_bIsCMRnhd3i3FTzRNGI2_1eoBUjmyByTyw)"> Link </a> |
+
+# References
+
+- [Example 1](https://www.circuitbread.com/ee-faq/how-does-an-h-bridge-work)
+- [Example 2](https://www.instructables.com/Wireless-Serial-Communication-Using-Bluefruit/)
+- [Example 3](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/)
 
 
