@@ -7,7 +7,7 @@ I built a gesture controlled robot car, that moves when you move your hand. The 
 | Filip D | Leigh High School | Bio-Engineering | Incoming Sophomore
 
 
-<img width="500" height="500" alt="IMG_0322" src="https://github.com/user-attachments/assets/af3b84a9-39f9-47a9-b3cf-f40174e9ad87" />
+<img width="900" height="900" alt="IMG_0322" src="https://github.com/user-attachments/assets/af3b84a9-39f9-47a9-b3cf-f40174e9ad87" />
 
   
 # Final Milestone
@@ -38,7 +38,7 @@ My project is a gesture controlled robot and my first milestone is building the 
 
 # Schematics 
 
-<img width="600" height="600" alt="Screen Shot 2026-07-31 at 9 24 41 AM" src="https://github.com/user-attachments/assets/214a6e06-de9e-4c64-9d4d-4ec219b82f98" />
+<img width="900" height="900" alt="Screen Shot 2026-07-31 at 9 24 41 AM" src="https://github.com/user-attachments/assets/214a6e06-de9e-4c64-9d4d-4ec219b82f98" />
 
 
 
