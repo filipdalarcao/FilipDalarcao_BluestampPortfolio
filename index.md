@@ -17,37 +17,28 @@ I built a gesture controlled robot car, that moves when you move your hand. The 
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+For my last milestone I had to finish the coding part of the project, and just the whole project. I made the code, and got all the components to work together, so now the project is complete. My biggest challenges at BSE were fixing a lot of code that wasn't working, and making the electrical part work. I learned that you have to keep trying and not give up, even if somethings not working, you have to keep retrying it. In the future I want to learn how to use Raspberry Pi, because from Bluestamp I learned arduino.
 
 
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+For my second milestone I had to finish all the electrical parts of my build. I wired together everything, and made sure it all works. So far the most surprising thing about the project was that the body is made of metal, so when I was wiring my components together, they would all short circuit. I overcame this by putting little plastic peices under all the components so the pins would not touch the metal. To finish my final milestone, I have to get the code working, and finish the project. 
+
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-My project is a gesture controlled robot and my first milestone is building the body. The parts of the body are the wheels, the two metal body parts, the motors, and the H bridge. I put all those parts together, and now my milestone is done. The biggest challenge was screwing all the screws because some of them came out, and I had to screw in both levels of the chassis, and the wheel axels. But now everything is assembled and im ready to pursue my second milestone which is the electrical things.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xphmux0Au4?si=WWS148a60P7QZxhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+My project is a gesture controlled robot and my first milestone is building the body. The parts of the body are the wheels, the two metal body parts, the motors, and the H bridge. I put all those parts together, and now my milestone is done. The biggest challenge was screwing all the screws because some of them came out, and I had to screw in both levels of the chassis, and the wheel axels. But now everything is assembled and im ready to pursue my second milestone which is the electrical parts.
 
 
 # Schematics 
