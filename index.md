@@ -6,9 +6,9 @@ I built a gesture controlled robot car, that moves when you move your hand. The 
 |:--:|:--:|:--:|:--:|
 | Filip D | Leigh High School | Bio-Engineering | Incoming Sophomore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+<img width="3024" height="4032" alt="IMG_0322" src="https://github.com/user-attachments/assets/af3b84a9-39f9-47a9-b3cf-f40174e9ad87" />
+
   
 # Final Milestone
 
