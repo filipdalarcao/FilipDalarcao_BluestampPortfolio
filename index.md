@@ -2,11 +2,6 @@
 I built a gesture controlled robot car, that moves when you move your hand. The Gyroscope on your hand connects with the car using bluetooth connected to an Arduino Uno. The Arduino connects to a motor controller which controls the motors.
 
 
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Filip D | Leigh High School | Bio-Engineering | Incoming Sophomore
