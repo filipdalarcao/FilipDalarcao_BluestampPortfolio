@@ -51,13 +51,13 @@ My project is a gesture controlled robot and my first milestone is building the 
 
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](<img width="1860" height="2480" alt="IMG_9812" src="https://github.com/user-attachments/assets/ee356055-b1c5-47ee-a748-e7bb5eb1ed24" />) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+
 ![Alt Text](image0.jpeg)
 ![Alt Text](IMG_9812.jpeg)
 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+
 
 ```c++
 #include <BLEDevice.h>
