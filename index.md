@@ -13,7 +13,7 @@ I built a gesture controlled robot car, that moves when you move your hand. The 
 # Final Milestone
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JjjE3mH4_jA?si=P0NUh8IG-M7WUiRV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my last milestone I had to finish the coding part of the project, and just the whole project. I made the code, and got all the components to work together, so now the project is complete. My biggest challenges at BSE were fixing a lot of code that wasn't working, and making the electrical part work. I learned that you have to keep trying and not give up, even if somethings not working, you have to keep retrying it. In the future I want to learn how to use Raspberry Pi, because from Bluestamp I learned arduino.
 
@@ -22,7 +22,7 @@ For my last milestone I had to finish the coding part of the project, and just t
 # Second Milestone
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gyu8L54UIsw?si=HE-E1hzKvRhhemGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For my second milestone I had to finish all the electrical parts of my build. I wired together everything, and made sure it all works. So far the most surprising thing about the project was that the body is made of metal, so when I was wiring my components together, they would all short circuit. I overcame this by putting little plastic peices under all the components so the pins would not touch the metal. To finish my final milestone, I have to get the code working, and finish the project. 
 
